@@ -79,7 +79,7 @@ Install using **Vortex** or **Mod Organizer 2**:
 
 ## Repository Structure
 
-`	ext
+```text
 ├── Database/               # Source databases and alias dictionaries
 │   ├── aliases.json        # Style tagging definitions and strip tables
 │   ├── quests.json         # Master quest database with confidence ratings
@@ -99,7 +99,7 @@ Install using **Vortex** or **Mod Organizer 2**:
 │   ├── GenerateQuestMarkers.pas
 │   └── ValidateQuestMarkers.pas
 └── package.py              # Build and distribution packaging script
-`
+```
 
 ---
 
@@ -108,13 +108,13 @@ Install using **Vortex** or **Mod Organizer 2**:
 Requirements: Python 3.9+ and FO4Edit 4.1.5+.
 
 1. Run Pascal generator in FO4Edit:
-   - Open Fallout4.esm and DLC masters in FO4Edit.
-   - Apply script Scripts/GenerateQuestMarkers.pas.
+   - Open `Fallout4.esm` and DLC masters in FO4Edit.
+   - Apply script `Scripts/GenerateQuestMarkers.pas`.
 2. Build distribution archive:
-   `ash
+   ```bash
    python package.py
-   `
-   Outputs a release archive in dist/RadiantQuestMarker-<version>.zip.
+   ```
+   Outputs a release archive in `dist/RadiantQuestMarker-<version>.zip`.
 
 ---
 
