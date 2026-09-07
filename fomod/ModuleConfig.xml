@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>Radiant Quest Marker</moduleName>
+  <requiredInstallFiles>
+    <folder source="Documentation" destination="Docs/RadiantQuestMarker" priority="0" />
+  </requiredInstallFiles>
+  <installSteps order="Explicit">
+    <installStep name="Step 1: Quest Tag Style">
+      <optionalFileGroups order="Explicit">
+        <group name="Choose Tag Style" type="SelectExactlyOne">
+          <plugins order="Explicit">
+            <plugin name="Descriptive (Recommended)">
+              <description>Readable full tags:&#10;• [Main] Main Story Quests&#10;• [BoS] / [Institute] / [Railroad] / [Minutemen] Faction Endgame Quests&#10;• [Side] Side Quests&#10;• [Radiant] Repeatable Faction Quests&#10;• [Defend] Settlement Attacks &amp; Defenses&#10;• [Timed] Timed Kidnappings &amp; Rescues&#10;• [DLC] Expansion Main Quests&#10;• [Creation Club] Creation Club Quests</description>
+                            <conditionFlags>
+                <flag name="style">desc</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Compact">
+              <description>Short prefixes:&#10;• [M] Main Story&#10;• [BoS] / [Inst] / [RR] / [MM] Faction Endgame&#10;• [S] Side Quests&#10;• [R] Radiant&#10;• [D] Settlement Defend&#10;• [T] Timed Kidnapping&#10;• [DLC] Expansion Main Quests&#10;• [CC] Creation Club Quests</description>
+                            <conditionFlags>
+                <flag name="style">sym</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Optional" /></typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+    <installStep name="Step 2: Pick What Quest Types to Tag">
+      <optionalFileGroups order="Explicit">
+        <group name="Choose What Categories to Tag" type="SelectAny">
+          <plugins order="Explicit">
+            <plugin name="Main Story &amp; Faction Siding Quests">
+              <description>Tags primary storyline quests ([Main] or [M]) and faction siding paths ([BoS], [Inst]/[Institute], [RR]/[Railroad], [MM]/[Minutemen]).&#10;&#10;Examples:&#10;• 'Fire Support' becomes '[BoS] Fire Support'&#10;• 'Blind Betrayal' becomes '[BoS] Blind Betrayal'&#10;• 'Tradecraft' becomes '[RR] Tradecraft'&#10;• 'The Battle of Bunker Hill' becomes '[Inst] The Battle of Bunker Hill'</description>
+              <conditionFlags>
+                <flag name="mod_main">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Side Quests">
+              <description>Tags standalone side quests and non-siding faction side quests ([Side] or [S]).&#10;&#10;Examples:&#10;• 'The Devil's Due' becomes '[S] The Devil's Due'&#10;• 'The Secret of Cabot House' becomes '[S] The Secret of Cabot House'&#10;• 'Story of the Century' becomes '[S] Story of the Century'&#10;• 'Sanctuary' becomes '[S] Sanctuary'&#10;• 'The Lost Patrol' becomes '[S] The Lost Patrol'&#10;• 'Boston After Dark' becomes '[S] Boston After Dark'</description>
+              <conditionFlags>
+                <flag name="mod_side">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Radiant Quests">
+              <description>Tags repeatable faction radiants (BoS, Railroad, Institute, Minutemen) ([Radiant] or [R]).&#10;&#10;Examples:&#10;• 'Cleansing the Commonwealth' becomes '[R] Cleansing the Commonwealth'&#10;• 'Quartermastery' becomes '[R] Quartermastery'&#10;• 'Weathervane' becomes '[R] Weathervane'</description>
+              <conditionFlags>
+                <flag name="mod_radiant">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Settlement Defense Quests">
+              <description>Tags settlement attack and defense alerts ([Defend] or [D]).&#10;&#10;Examples:&#10;• 'Raider Troubles' becomes '[D] Raider Troubles'&#10;• 'Greenskins' becomes '[D] Greenskins'</description>
+              <conditionFlags>
+                <flag name="mod_defend">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Timed Kidnapping Quests">
+              <description>Tags rescue quests with auto-fail countdown clocks ([Timed] or [T]).&#10;&#10;Examples:&#10;• 'Kidnapping at Finch Farm' becomes '[T] Kidnapping at Finch Farm'</description>
+              <conditionFlags>
+                <flag name="mod_timed">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="DLC Quests (Nuka-World, Far Harbor, Automatron, Vault-Tec)">
+              <description>Tags official DLC expansion quests ([DLC] / [Radiant] or [DLC] / [R]). Automatically skips any DLC whose master ESM is missing.</description>
+              <conditionFlags>
+                <flag name="mod_dlc">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+            <plugin name="Creation Club / Next-Gen Quests">
+              <description>Tags Creation Club / Next-Gen update quests ([CC]).&#10;&#10;Examples:&#10;• 'Speak of the Devil' becomes '[CC] Speak of the Devil'&#10;• 'Echoes of the Past' becomes '[CC] Echoes of the Past'</description>
+              <conditionFlags>
+                <flag name="mod_cc">On</flag>
+              </conditionFlags>
+              <typeDescriptor><type name="Recommended" /></typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+  <conditionalFileInstalls>
+    <patterns>
+      <!-- Main -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_main" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Main" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_main" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Main" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- Side -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_side" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Side" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_side" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Side" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- Radiant -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_radiant" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Radiant" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_radiant" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Radiant" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- Defend -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_defend" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Defend" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_defend" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Defend" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- Timed -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_timed" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Timed" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_timed" value="On" />
+          <fileDependency file="Fallout4.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Timed" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- CC -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_cc" value="On" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/NextGen" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_cc" value="On" />
+        </dependencies>
+        <files>
+          <folder source="Compact/NextGen" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- DLC: Automatron -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCRobot.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/Automatron" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCRobot.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/Automatron" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- DLC: Far Harbor -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCCoast.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/FarHarbor" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCCoast.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/FarHarbor" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- DLC: Nuka-World -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCNukaWorld.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/NukaWorld" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCNukaWorld.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/NukaWorld" destination="" priority="0" />
+        </files>
+      </pattern>
+
+      <!-- DLC: Vault-Tec -->
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="desc" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCworkshop03.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Descriptive/VaultTec" destination="" priority="0" />
+        </files>
+      </pattern>
+      <pattern>
+        <dependencies operator="And">
+          <flagDependency flag="style" value="sym" />
+          <flagDependency flag="mod_dlc" value="On" />
+          <fileDependency file="DLCworkshop03.esm" state="Active" />
+        </dependencies>
+        <files>
+          <folder source="Compact/VaultTec" destination="" priority="0" />
+        </files>
+      </pattern>
+    </patterns>
+  </conditionalFileInstalls>
+</config>

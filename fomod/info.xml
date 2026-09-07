@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fomod>
+  <Name>Radiant Quest Marker</Name>
+  <Author>Radiant Quest Marker project</Author>
+  <Version MachineVersion="1.0.0">1.0.0</Version>
+  <Description>
+    Tags radiant, repeatable, timed and settlement quests in the Pip-Boy log so they
+    are distinguishable from one-time story and side content. Display names only.
+    No quest is removed, disabled or altered in behaviour.
+  </Description>
+  <Website></Website>
+  <Groups>
+    <element>Gameplay Effects and Changes</element>
+    <element>User Interface</element>
+  </Groups>
+</fomod>
