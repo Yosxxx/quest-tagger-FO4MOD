@@ -7,7 +7,7 @@
 
 Tells you at a glance in your Pip-Boy quest log which quests are main storyline milestones, faction endings, side quests, Creation Club content, or repeatable radiants.
 
-`	ext
+```text
 [Main] War Never Changes
 [Institute - Main] Synth Retention
 [Side Quest] Boston After Dark
@@ -15,7 +15,7 @@ Tells you at a glance in your Pip-Boy quest log which quests are main storyline 
 [Radiant] Cleansing the Commonwealth
 [Defend] Defend the Castle
 [Timed] Kidnapping at Finch Farm
-`
+```
 
 ---
 
