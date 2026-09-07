@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Rules used by AuditQuests.pas to classify QUST records from the actual game files rather than from quest names. Spec section 8 and 13.",
+
+  "hardExclusions": {
+    "comment": "A record matching any of these is never a tagging candidate, regardless of other signals.",
+    "noDisplayName": "QUST with an empty or missing FULL. These are controllers, dialogue holders and system quests - they never appear in the pilipboy log.",
+    "runOnceFlag": "DNAM\\Flags has 'Run Once' set. A run-once quest cannot be re-issued.",
+    "startGameEnabledWithoutStoryNode": "Start Game Enabled and not referenced by any SMQN - almost always a persistent system/controller quest.",
+    "editorIDPrefixes": [
+      "DialogueGeneric", "DialogueExport", "Dialogue", "Player", "Sys", "Debug",
+      "WorkshopParent", "MQ", "COMPanion", "Companion", "AutoLoad", "TutorialQuest"
+    ],
+    "editorIDContains": ["Controller", "Manager", "Handler", "Holder", "Template", "Test"]
+  },
+
+  "requiredPositiveSignals": {
+    "comment": "A record must satisfy minSignals of the following to be proposed as radiant. Weight is advisory - the audit reports each signal individually.",
+    "minSignals": 2,
+    "signals": [
+      {
+        "id": "SMQN_REFERENCED",
+        "weight": 3,
+        "description": "The QUST is referenced by a Story Manager Quest Node (SMQN). This is the strongest available record-level evidence that the engine issues the quest procedurally rather than once by script.",
+        "howChecked": "ReferencedByCount / ReferencedByIndex, filtered on signature SMQN. Requires xEdit reference info to be built."
+      },
+      {
+        "id": "NOT_RUN_ONCE",
+        "weight": 1,
+        "description": "DNAM\\Flags does not contain 'Run Once'.",
+        "howChecked": "String search on GetElementEditValues(rec, 'DNAM\\Flags')."
+      },
+      {
+        "id": "ALLOW_REPEATED_STAGES",
+        "weight": 2,
+        "description": "DNAM\\Flags contains 'Allow repeated stages'. Set on quests whose stages are re-run for each new issue.",
+        "howChecked": "String search on the flags edit value."
+      },
+      {
+        "id": "REPEATS_CONDITIONS",
+        "weight": 2,
+        "description": "DNAM\\Flags contains 'Repeats conditions'.",
+        "howChecked": "String search on the flags edit value."
+      },
+      {
+        "id": "EDITORID_PATTERN",
+        "weight": 2,
+        "description": "EditorID matches a known radiant naming family (see radiantEditorIDPatterns).",
+        "howChecked": "Case-insensitive prefix/substring match."
+      },
+      {
+        "id": "ALIAS_FORCED_FROM_EVENT",
+        "weight": 1,
+        "description": "At least one quest alias is filled from a Story Manager event or by 'Find Matching Reference' rather than by a unique forced reference. Indicates rotating targets.",
+        "howChecked": "Alias flags inspection; advisory only, reported not enforced."
+      }
+    ]
+  },
+
+  "radiantEditorIDPatterns": {
+    "comment": "Prefix families observed in Fallout 4 plugin structure. Matching sets EDITORID_PATTERN and proposes the listed tag. Never sufficient on its own.",
+    "patterns": [
+      { "match": "RadiantOwned",        "mode": "prefix",   "tag": "settlement_defense",     "faction": "Minutemen", "module": "Settlement", "note": "Threats against player-owned settlements." },
+      { "match": "RadiantUnowned",      "mode": "prefix",   "tag": "minutemen_radiant",      "faction": "Minutemen", "module": "Settlement", "note": "Clear-and-claim quests for prospective settlements." },
+      { "match": "RadiantMinuteman",    "mode": "prefix",   "tag": "minutemen_radiant",      "faction": "Minutemen", "module": "Settlement", "note": "" },
+      { "match": "MinRecruit",          "mode": "prefix",   "tag": "settlement_establishment","faction": "Minutemen","module": "Settlement", "note": "Settler recruitment / settlement establishment family." },
+      { "match": "BoSR",                "mode": "prefix",   "tag": "brotherhood_radiant",    "faction": "Brotherhood of Steel", "module": "Vanilla", "note": "Brotherhood radiant family." },
+      { "match": "RRR",                 "mode": "prefix",   "tag": "railroad_radiant",       "faction": "Railroad", "module": "Vanilla", "note": "Railroad radiant family." },
+      { "match": "InstR",               "mode": "prefix",   "tag": "institute_radiant",      "faction": "Institute", "module": "Vanilla", "note": "Institute radiant family." },
+      { "match": "DLC01Radiant",        "mode": "prefix",   "tag": "automatron_radiant",     "faction": "Other", "module": "Automatron", "note": "" },
+      { "match": "DLC03Radiant",        "mode": "prefix",   "tag": "farharbor_radiant",      "faction": "Far Harbor", "module": "FarHarbor", "note": "" },
+      { "match": "DLC04Radiant",        "mode": "prefix",   "tag": "nukaworld_radiant",      "faction": "Nuka-World", "module": "NukaWorld", "note": "" },
+      { "match": "DLC04Raid",           "mode": "prefix",   "tag": "nukaworld_radiant",      "faction": "Nuka-World", "module": "NukaWorld", "note": "Outpost raiding family - confirm repeatability individually." },
+      { "match": "Radiant",             "mode": "contains", "tag": "radiant",                "faction": "Other", "module": null, "note": "Generic fallback. Reported as a candidate only, never auto-tagged." }
+    ]
+  },
+
+  "timedSignals": {
+    "comment": "Heuristics for the [Timed - Radiant] category. All results are proposed as 'likely' at best - confirm manually.",
+    "vmadPropertyNameContains": ["Timer", "TimeLimit", "DaysTo", "DaysUntil", "FailTime", "GameDaysTo"],
+    "attachedScriptNameContains": ["Timer", "TimeLimit"],
+    "note": "Most Minutemen settlement-threat quests fail after a fixed number of in-game days. Detection is by script property, so mods that replace those scripts may change the result."
+  },
+
+  "settlementSignals": {
+    "comment": "Heuristics for settlement classification.",
+    "aliasNameContains": ["Workshop", "Settlement", "Settler"],
+    "fullNameContainsToken": ["<Alias=Workshop", "<Alias=Settlement"],
+    "note": "Settlement involvement alone never sets a radiant tag (spec 13). It only selects between the settlement tag variants once a quest already qualifies."
+  },
+
+  "moduleAssignment": {
+    "comment": "Modules are disjoint so that FOMOD toggles never produce two plugins overriding the same QUST.",
+    "order": [
+      { "if": "sourcePlugin matches cc*", "module": "NextGen" },
+      { "if": "sourcePlugin == Fallout4.esm and timed == true", "module": "Timed" },
+      { "if": "sourcePlugin == Fallout4.esm and category starts with Settlement", "module": "Settlement" },
+      { "if": "sourcePlugin == DLCRobot.esm", "module": "Automatron" },
+      { "if": "sourcePlugin == DLCCoast.esm", "module": "FarHarbor" },
+      { "if": "sourcePlugin == DLCNukaWorld.esm", "module": "NukaWorld" },
+      { "if": "sourcePlugin == DLCworkshop03.esm", "module": "VaultTec" },
+      { "if": "sourcePlugin == DLCworkshop01.esm or DLCworkshop02.esm", "module": "OtherDLC" },
+      { "if": "sourcePlugin == Fallout4.esm", "module": "Vanilla" }
+    ]
+  }
+}

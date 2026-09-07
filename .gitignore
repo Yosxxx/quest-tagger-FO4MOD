@@ -1,0 +1,28 @@
+# Build & distribution output
+dist/
+build/
+*.7z
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.env
+.venv
+env/
+venv/
+
+# Editor & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# FO4Edit / xEdit logs & backups
+*.backup*
+*.log

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "purpose": "Tag vocabulary. The 'strip' list is what makes re-running the generator idempotent and lets a user switch tag styles without stacking prefixes (spec section 14).",
+
+  "styles": {
+    "descriptive": {
+      "main":                     "[Main]",
+      "side":                     "[Side Quest]",
+      "dlc":                      "[DLC]",
+      "automatron_main":          "[Automatron]",
+      "farharbor_main":           "[Far Harbor]",
+      "nukaworld_main":           "[Nuka-World]",
+      "vaulttec_main":            "[Vault-Tec]",
+      "cc":                       "[Creation Club]",
+      "nextgen":                  "[Creation Club]",
+      "radiant":                  "[Radiant]",
+      "minutemen_radiant":        "[Radiant]",
+      "brotherhood_radiant":      "[Radiant]",
+      "railroad_radiant":         "[Radiant]",
+      "institute_radiant":        "[Radiant]",
+      "farharbor_radiant":        "[Radiant]",
+      "nukaworld_radiant":        "[Radiant]",
+      "automatron_radiant":       "[Radiant]",
+      "vaulttec_radiant":         "[Radiant]",
+      "settlement_radiant":       "[Radiant]",
+      "timed_radiant":            "[Timed]",
+      "timed":                    "[Timed]",
+      "settlement_establishment": "[Radiant]",
+      "settlement_defense":       "[Defend]",
+      "defend":                   "[Defend]",
+      "bos":                      "[BoS - Main]",
+      "inst":                     "[Institute - Main]",
+      "rr":                       "[Railroad - Main]",
+      "mm":                       "[Minutemen - Main]"
+    },
+    "compact": {
+      "main":                     "[M]",
+      "side":                     "[S]",
+      "dlc":                      "[DLC]",
+      "automatron_main":          "[DLC]",
+      "farharbor_main":           "[DLC]",
+      "nukaworld_main":           "[DLC]",
+      "vaulttec_main":            "[DLC]",
+      "cc":                       "[CC]",
+      "nextgen":                  "[CC]",
+      "radiant":                  "[R]",
+      "minutemen_radiant":        "[R]",
+      "brotherhood_radiant":      "[R]",
+      "railroad_radiant":         "[R]",
+      "institute_radiant":        "[R]",
+      "farharbor_radiant":        "[R]",
+      "nukaworld_radiant":        "[R]",
+      "automatron_radiant":       "[R]",
+      "vaulttec_radiant":         "[R]",
+      "settlement_radiant":       "[R]",
+      "timed_radiant":            "[T]",
+      "timed":                    "[T]",
+      "settlement_establishment": "[R]",
+      "settlement_defense":       "[D]",
+      "defend":                   "[D]",
+      "bos":                      "[BoS]",
+      "inst":                     "[Inst]",
+      "rr":                       "[RR]",
+      "mm":                       "[MM]"
+    }
+  },
+
+  "stripOrder": {
+    "comment": "The generator strips these from the front of a display name before applying the new tag. Longest first so that '[Settlement - Establishment]' is not partially matched by '[Settlement - Radiant]'. Only exact bracketed tokens from this list are stripped - an unrelated name that happens to start with '[' is left alone.",
+    "sortBy": "length descending"
+  },
+
+  "modules": {
+    "Main":        { "plugin": "QuestMarkers_Main.esp",        "masters": ["Fallout4.esm"] },
+    "Side":        { "plugin": "QuestMarkers_Side.esp",        "masters": ["Fallout4.esm"] },
+    "Radiant":     { "plugin": "QuestMarkers_Radiant.esp",     "masters": ["Fallout4.esm"] },
+    "Defend":      { "plugin": "QuestMarkers_Defend.esp",      "masters": ["Fallout4.esm"] },
+    "Vanilla":     { "plugin": "QuestMarkers_Vanilla.esp",     "masters": ["Fallout4.esm"] },
+    "Settlement":  { "plugin": "QuestMarkers_Settlement.esp",  "masters": ["Fallout4.esm"] },
+    "Timed":       { "plugin": "QuestMarkers_Timed.esp",       "masters": ["Fallout4.esm"] },
+    "Automatron":  { "plugin": "QuestMarkers_Automatron.esp",  "masters": ["Fallout4.esm", "DLCRobot.esm"] },
+    "FarHarbor":   { "plugin": "QuestMarkers_FarHarbor.esp",   "masters": ["Fallout4.esm", "DLCCoast.esm"] },
+    "NukaWorld":   { "plugin": "QuestMarkers_NukaWorld.esp",   "masters": ["Fallout4.esm", "DLCNukaWorld.esm"] },
+    "VaultTec":    { "plugin": "QuestMarkers_VaultTec.esp",    "masters": ["Fallout4.esm", "DLCworkshop03.esm"] },
+    "OtherDLC":    { "plugin": "QuestMarkers_OtherDLC.esp",    "masters": ["Fallout4.esm", "DLCworkshop01.esm", "DLCworkshop02.esm"] },
+    "NextGen":     { "plugin": "QuestMarkers_NextGen.esp",     "masters": ["Fallout4.esm", "<resolved cc*.esl files>"] }
+  },
+
+  "dlcPlugins": {
+    "DLCRobot.esm":       "Automatron",
+    "DLCworkshop01.esm":  "Wasteland Workshop",
+    "DLCCoast.esm":       "Far Harbor",
+    "DLCworkshop02.esm":  "Contraptions Workshop",
+    "DLCworkshop03.esm":  "Vault-Tec Workshop",
+    "DLCNukaWorld.esm":   "Nuka-World"
+  }
+}
