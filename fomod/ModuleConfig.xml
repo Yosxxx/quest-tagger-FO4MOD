@@ -11,15 +11,17 @@
         <group name="Choose Tag Style" type="SelectExactlyOne">
           <plugins order="Explicit">
             <plugin name="Descriptive (Recommended)">
-              <description>Readable full tags:&#10;• [Main] Main Story Quests&#10;• [BoS] / [Institute] / [Railroad] / [Minutemen] Faction Endgame Quests&#10;• [Side] Side Quests&#10;• [Radiant] Repeatable Faction Quests&#10;• [Defend] Settlement Attacks &amp; Defenses&#10;• [Timed] Timed Kidnappings &amp; Rescues&#10;• [DLC] Expansion Main Quests&#10;• [Creation Club] Creation Club Quests</description>
-                            <conditionFlags>
+              <description>Readable full tags:&#10;• [Main] Main Story Quests&#10;• [BoS - Main] / [Institute - Main] / [Railroad - Main] / [Minutemen - Main] Faction Endgame Quests&#10;• [Side Quest] Side Quests&#10;• [Radiant] Repeatable Faction Quests&#10;• [Defend] Settlement Attacks &amp; Defenses&#10;• [Timed] Timed Kidnappings &amp; Rescues&#10;• [DLC] Expansion Main Quests&#10;• [Creation Club] Creation Club Quests</description>
+              <image path="fomod/images/Descriptive.png" />
+              <conditionFlags>
                 <flag name="style">desc</flag>
               </conditionFlags>
               <typeDescriptor><type name="Recommended" /></typeDescriptor>
             </plugin>
             <plugin name="Compact">
               <description>Short prefixes:&#10;• [M] Main Story&#10;• [BoS] / [Inst] / [RR] / [MM] Faction Endgame&#10;• [S] Side Quests&#10;• [R] Radiant&#10;• [D] Settlement Defend&#10;• [T] Timed Kidnapping&#10;• [DLC] Expansion Main Quests&#10;• [CC] Creation Club Quests</description>
-                            <conditionFlags>
+              <image path="fomod/images/Compact.png" />
+              <conditionFlags>
                 <flag name="style">sym</flag>
               </conditionFlags>
               <typeDescriptor><type name="Optional" /></typeDescriptor>
