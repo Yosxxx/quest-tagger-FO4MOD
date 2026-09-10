@@ -469,7 +469,7 @@ var
   oldName, baseName, newName, currType: string;
   i, objCount: integer;
   rec, tgt, ovr: IInterface;
-  ambiguous, toMisc, needTypeChange: boolean;
+  ambiguous, toMisc, needTypeChange, isMiscQuest: boolean;
 begin
   Result := 0;
   cModified := 0; cSkipUnverified := 0; cSkipExcluded := 0; cSkipDisabled := 0;
@@ -618,7 +618,8 @@ begin
     SetElementEditValues(ovr, 'FULL', newName);
 
     objCount := 0;
-    if TAG_OBJECTIVES then begin
+    isMiscQuest := (currType = 'None') or (currType = 'Miscellaneous') or (oldName = '') or (toMisc);
+    if TAG_OBJECTIVES or isMiscQuest then begin
       objCount := TagObjectives(ovr, tagText);
       cObjsModified := cObjsModified + objCount;
     end;
