@@ -2,7 +2,7 @@
 <fomod>
   <Name>Radiant Quest Marker</Name>
   <Author>Radiant Quest Marker project</Author>
-  <Version MachineVersion="1.1.1">1.1.1</Version>
+  <Version MachineVersion="1.2.0">1.2.0</Version>
   <Description>
     Tags radiant, repeatable, timed and settlement quests in the Pip-Boy log so they
     are distinguishable from one-time story and side content. Display names only.

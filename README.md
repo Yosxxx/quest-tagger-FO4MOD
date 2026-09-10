@@ -1,7 +1,7 @@
 # Pip-Boy Quest Tagger for Fallout 4
 
 [![Fallout 4](https://img.shields.io/badge/Fallout%204-1.11.240%2B-blue.svg)](https://bethesda.net/game/fallout-4)
-[![Mod Version](https://img.shields.io/badge/Version-1.1.1-brightgreen.svg)](https://www.nexusmods.com/fallout4/mods)
+[![Mod Version](https://img.shields.io/badge/Version-1.2.0-brightgreen.svg)](https://www.nexusmods.com/fallout4/mods)
 [![Format](https://img.shields.io/badge/Format-ESL--flagged%20ESP-orange.svg)](#)
 [![Mod Manager](https://img.shields.io/badge/Installer-2--Step%20FOMOD-purple.svg)](#installation)
 
@@ -9,12 +9,15 @@ Tells you at a glance in your Pip-Boy quest log which quests are main storyline 
 
 ```text
 [Main] War Never Changes
-[Institute - Main] Synth Retention
-[Side Quest] Boston After Dark
-[Creation Club] Echoes of the Past
+[Brotherhood of Steel] Fire Support
+[Institute] Synth Retention
+[Minutemen] Taking Independence
+[Railroad] Tradecraft
+[Brotherhood Side Quest] The Lost Patrol
+[Railroad Side Quest] Boston After Dark
+[Side Quest] Confidence Man
 [Radiant] Cleansing the Commonwealth
-[Defend] Defend the Castle
-[Timed] Kidnapping at Finch Farm
+[Creation Club] Echoes of the Past
 ```
 
 ---
@@ -23,10 +26,10 @@ Tells you at a glance in your Pip-Boy quest log which quests are main storyline 
 
 - **Instant Recognition:** Distinguish one-time authored story quests from endless repeatable radiants at a glance.
 - **Two Distinct Tagging Styles:**
-  - **Descriptive (Recommended):** Full, immersive words like [Main], [Side Quest], [Creation Club], and [Minutemen - Main].
-  - **Compact:** Clean, minimal bracketed symbols ([M], [S], [CC], [R], [D], [T]).
-- **FallUI & FIS Safe:** Faction endgame paths use - Main (e.g. [Minutemen - Main], [Institute - Main]), preventing inventory sorting UI mods from turning quest names into generic faction icons.
-- **Zero Script Bloat:** 100% pure override plugins (modifying only QUST \ FULL - Name). No scripts, no scripts extender required, no risk of savegame corruption.
+  - **Descriptive (Recommended):** Full, immersive words like `[Main]`, `[Brotherhood of Steel]`, `[Railroad Side Quest]`, `[Side Quest]`, `[Creation Club]`.
+  - **Compact:** Clean, minimal bracketed symbols (`[M]`, `[BOS]`, `[BOS-S]`, `[INST]`, `[INST-S]`, `[MM]`, `[MM-S]`, `[RR]`, `[RR-S]`, `[S]`, `[R]`, `[CC]`).
+- **Fallout 4 Quest Flowchart Aligned:** Quests categorized according to the official quest progression flowchart.
+- **Zero Script Bloat:** 100% pure override plugins (modifying only `QUST \ FULL - Name`). No scripts, no script extender required, no risk of savegame corruption.
 - **100% ESL-Flagged:** Takes 0 slots against your 254 ESP/ESM plugin limit.
 - **2-Step Modular FOMOD Installer:** Step 1 picks your visual style; Step 2 lets you select which quest categories to tag. Includes live visual previews in Vortex and Mod Organizer 2.
 
@@ -36,15 +39,17 @@ Tells you at a glance in your Pip-Boy quest log which quests are main storyline 
 
 | Category | Descriptive Style (Default) | Compact Style | Example |
 | :--- | :--- | :--- | :--- |
-| **Main Story** | [Main] | [M] | [Main] Institutionalized |
-| **Minutemen Endgame** | [Minutemen - Main] | [MM] | [Minutemen - Main] When Freedom Calls |
-| **Railroad Endgame** | [Railroad - Main] | [RR] | [Railroad - Main] Tradecraft |
-| **Institute Endgame** | [Institute - Main] | [Inst] | [Institute - Main] Synth Retention |
-| **Brotherhood Endgame** | [BoS - Main] | [BoS] | [BoS - Main] Blind Betrayal |
+| **Main Story** | [Main] | [M] | [Main] Out of Time |
+| **Brotherhood of Steel** | [Brotherhood of Steel] | [BOS] | [Brotherhood of Steel] Fire Support |
+| **Institute** | [Institute] | [INST] | [Institute] Synth Retention |
+| **Minutemen** | [Minutemen] | [MM] | [Minutemen] When Freedom Calls |
+| **Railroad** | [Railroad] | [RR] | [Railroad] Tradecraft |
+| **Brotherhood Side Quest** | [Brotherhood Side Quest] | [BOS-S] | [Brotherhood Side Quest] The Lost Patrol |
+| **Institute Side Quest** | [Institute Side Quest] | [INST-S] | [Institute Side Quest] A House Divided |
+| **Minutemen Side Quest** | [Minutemen Side Quest] | [MM-S] | [Minutemen Side Quest] Sanctuary |
+| **Railroad Side Quest** | [Railroad Side Quest] | [RR-S] | [Railroad Side Quest] Boston After Dark |
 | **Side Quests** | [Side Quest] | [S] | [Side Quest] Confidence Man |
-| **Repeatable Radiants** | [Radiant] | [R] | [Radiant] Quartermastery |
-| **Settlement Defense** | [Defend] | [D] | [Defend] Raider Troubles |
-| **Timed Kidnappings** | [Timed] | [T] | [Timed] Kidnapping at Finch Farm |
+| **Radiants & Defenses** | [Radiant] | [R] | [Radiant] Cleansing the Commonwealth |
 | **DLC Campaigns** | [Far Harbor] / [Nuka-World] / etc. | [DLC] | [Far Harbor] Rite of Passage |
 | **Creation Club / Next-Gen** | [Creation Club] | [CC] | [Creation Club] Echoes of the Past |
 

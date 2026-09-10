@@ -3,6 +3,27 @@
 All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.0] - 2026-09-10
+
+### Added / Changed
+- Recategorized entire mod classification scheme based on the Fallout 4 Quest Flowchart.
+- Implemented comprehensive 11-tag hierarchy across both styles:
+  - **MAIN**: `[M]` / `[Main]`
+  - **BROTHERHOOD OF STEEL**: `[BOS]` / `[Brotherhood of Steel]`
+  - **INSTITUTE**: `[INST]` / `[Institute]`
+  - **MINUTEMEN**: `[MM]` / `[Minutemen]`
+  - **RAILROAD**: `[RR]` / `[Railroad]`
+  - **BROTHERHOOD SIDE QUEST**: `[BOS-S]` / `[Brotherhood Side Quest]`
+  - **INSTITUTE SIDE QUEST**: `[INST-S]` / `[Institute Side Quest]`
+  - **MINUTEMEN SIDE QUEST**: `[MM-S]` / `[Minutemen Side Quest]`
+  - **RAILROAD SIDE QUEST**: `[RR-S]` / `[Railroad Side Quest]`
+  - **SIDE QUEST**: `[S]` / `[Side Quest]` (Vault 81 strictly preserved as Side Quest)
+  - **RADIANT**: `[R]` / `[Radiant]` (including settlement defense and timed attacks)
+- Reassigned Railroad repeatable missions (`Weathervane`, `Jackpot`, `Randolph Safehouse`, `To the Mattresses`, `Butcher's Bill`, `Mercer Safehouse`, `Lost Soul`) to Railroad Side Quests (`[RR-S]`).
+- Reassigned Proctor Quinlan / Ingram / Neriah research objectives (`BoSFFMaster`) to Brotherhood Side Quest (`[BOS-S]`).
+- Rebuilt plugins to maintain 100% disjoint overrides between modules with zero FormID collisions.
+- Resolved all missing vanilla string IDs directly from `Fallout4.esm` string tables.
+
 ## [1.1.1] - 2026-09-10
 
 ### Fixed

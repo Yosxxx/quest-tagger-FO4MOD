@@ -15,9 +15,9 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | State | Entries |
 | --- | --- |
-| verified | 198 |
-| likely | 17 |
-| unverified | 3 |
+| verified | 222 |
+| likely | 12 |
+| unverified | 2 |
 | excluded | 2 |
 
 > **Nothing in this file ships as `verified` out of the box.** Verification requires
@@ -32,137 +32,149 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| <Alias=TroubleName> for <Alias=ActualLocation> | 00161D1D | MinRadiantOwned06ChangeLocOnly | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
+| <Alias=TroubleName> for <Alias=ActualLocation> | 00161D1D | MinRadiantOwned06ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Clearing the Way | 0015F03F | MinRecruit05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Defend <Alias=ActualLocation> | 000A1412 | MinRadiantOwned01 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Defend <Alias=ActualLocation> | 0005E51F | MinRadiantOwned09ChangeLocOnly | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Defend <Alias=ActualLocation> | 00160409 | MinRadiantOwned05 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Defend <Alias=ActualLocation> | 00186A08 | MinRadiantOwned08 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Defend <Alias=ActualLocation> | 001533A9 | MinRadiantOwned11 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Defend the Castle | 000BDE7A | MinDefendCastle | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
-| Defend the artillery at <Alias=ActualLocation> | 000E477F | MinRadiantOwned04_BOS | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Form Ranks | 000B9337 | Min301 | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
-| Ghoul Problem | 00186642 | MinRecruit07 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Greenskins | 00157CA5 | MinRecruit04 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Gunners | 000C97A8 | WorkshopGunnerAttack01 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Gunners | 000CFF72 | WorkshopGunnerAttack02 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Inside Job | 0013008E | Min207 | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
-| Kidnapped Trader at <Alias=ActualLocation> | 0003E0C1 | MinRadiantOwned03ChangeLocOnly | Timed | yes | `[Timed]` / `[T]` | verified |
-| Kidnapping | 00099848 | MinRecruit02 | Timed | yes | `[Timed]` / `[T]` | verified |
-| Old Guns | 000AA778 | Min03 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Defend <Alias=ActualLocation> | 000A1412 | MinRadiantOwned01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Defend <Alias=ActualLocation> | 0005E51F | MinRadiantOwned09ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Defend <Alias=ActualLocation> | 00160409 | MinRadiantOwned05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Defend <Alias=ActualLocation> | 00186A08 | MinRadiantOwned08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Defend <Alias=ActualLocation> | 001533A9 | MinRadiantOwned11 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Defend the Castle | 000BDB04 | MinDefendCastle | Main | no | `[Minutemen]` / `[MM]` | verified |
+| Defend the artillery at <Alias=ActualLocation> | 000E477F | MinRadiantOwned04_BOS | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Form Ranks | 000DDFDB | Min301 | Main | no | `[Minutemen]` / `[MM]` | verified |
+| Ghoul Problem | 00186642 | MinRecruit07 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Greenskins | 00157CA5 | MinRecruit04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Gunners | 000C97A8 | WorkshopGunnerAttack01 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Gunners | 000CFF72 | WorkshopGunnerAttack02 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Inside Job | 00136329 | Min207 | Main | no | `[Minutemen]` / `[MM]` | verified |
+| Kidnapped Trader at <Alias=ActualLocation> | 0003E0C1 | MinRadiantOwned03ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Kidnapping | 00099848 | MinRecruit02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Old Guns | 000AA778 | Min03 | Main | no | `[Minutemen]` / `[MM]` | verified |
 | Power for <Alias=ActualLocation> | 00162F44 | MinRadiantOwned07ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Raider Troubles | 00098136 | MinRecruit01 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
+| Raider Troubles | 00098136 | MinRecruit01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Resettle Refugees at <Alias=HostileWorkshopLocation> | 00164167 | MinRecruit09 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Returning the Favor | 00106F05 | MinRecruit03 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Returning the Favor | 00106F05 | MinRecruit03 | Side | no | `[Minutemen Side Quest]` / `[MM-S]` | verified |
 | Rogue Courser at <Alias=Dungeon> | 00157577 | MinRecruit08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Sanctuary | 0005DEE4 | Min01 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Stop the Raiding at <Alias=ActualLocation> | 0003DF95 | MinRadiantOwned02 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
-| Suspected Synth at <Alias=ActualLocation> | 00109D73 | MinRadiantOwned10ChangeLocOnly | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
+| Sanctuary | 0005DEE4 | Min01 | Side | no | `[Minutemen Side Quest]` / `[MM-S]` | verified |
+| Stop the Raiding at <Alias=ActualLocation> | 0003DF95 | MinRadiantOwned02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Suspected Synth at <Alias=ActualLocation> | 00109D73 | MinRadiantOwned10ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Taking Independence | 0003A457 | Min02 | Main | no | `[Minutemen]` / `[MM]` | verified |
 | Taking Point | 0015F040 | MinRecruit06 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| The First Step | 0011B36E | MinRecruit00 | Side | no | `[Side Quest]` / `[S]` | verified |
-| The Nuclear Option (Minutemen) | 0010C64D | MQ302Min | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
-| When Freedom Calls | 001A001C | Min00 | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
-| With Our Powers Combined | 000DFB3C | MinDestBoS | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
+| The First Step | 0011B36E | MinRecruit00 | Side | no | `[Minutemen Side Quest]` / `[MM-S]` | verified |
+| The Nuclear Option (Minutemen) | 0010C64A | MQ302Min | Main | no | `[Minutemen]` / `[MM]` | verified |
+| The Sight | 000EBE71 | MQ00MamaMurphy | Side | no | `[Minutemen Side Quest]` / `[MM-S]` | verified |
+| When Freedom Calls | 001A001C | Min00 | Main | no | `[Minutemen]` / `[MM]` | verified |
+| With Our Powers Combined | 000DFB3C | MinDestBoS | Main | no | `[Minutemen]` / `[MM]` | verified |
 | Defend the Castle | _pending audit_ | _pending audit_ | Side | no | - | excluded |
-| Taking Independence | 0003A457 | Min02 | Main | no | `[Minutemen - Main]` / `[MM]` | likely |
 | Group Effort | _pending audit_ | _pending audit_ | Radiant | yes | `[Radiant]` / `[R]` | unverified |
 
 ## Brotherhood of Steel
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| A New Dawn | 00173C56 | BoS305 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Ad Victoriam | 0010C64B | BoS304 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Blind Betrayal | 000B2D48 | BoS302 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Call to Arms | 0006F5C1 | BoS101 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Duty or Dishonor | 0004402C | BoSM02 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Fire Support | 0005DDAB | BoS100 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| From Within | 0009FF4E | BoS203 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
+| A Loose End | 000ADCE5 | BoSM04 | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
+| A New Dawn | 00182EAE | BoS305 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Ad Victoriam | 00173ED9 | BoS304 | Side | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Blind Betrayal | 000B9F9D | BoS302 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| BoS Freeform Master Quest | 001B2B08 | BoSFFMaster | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
+| Call to Arms | 0006F5C1 | BoS101 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Cleansing the Commonwealth | 00064EC7 | BoSR01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Duty or Dishonor | 0004402C | BoSM02 | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
+| Feeding the Troops | 000D1EB2 | BoSR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Fire Support | 0005DDAB | BoS100 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| From Within | 0009FF4E | BoS203 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Leading by Example | 000C8675 | BoSR03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Learning Curve | 000CF3E2 | BoSR04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Liberty Reprimed | 000B933A | BoS301 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Outside the Wire | 00062CE1 | BoS204 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Semper Invicta | 0002BF20 | BoS200 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Shadow of Steel | 0002C13A | BoS201 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Show No Mercy | 0002C13B | BoS202 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Spoils of War | 000A38DF | BoS303 | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Tactical Thinking | 0009B8BE | BoS302B | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| The Lost Patrol | 000B1D79 | BoSM01 | Side | no | `[Side Quest]` / `[S]` | verified |
-| The Nuclear Option (Brotherhood of Steel) | 0010C64A | MQ302BoS | Main | no | `[BoS - Main]` / `[BoS]` | verified |
-| Tour of Duty | 00062CE2 | BoS201B | Main | no | `[BoS - Main]` / `[BoS]` | verified |
+| Liberty Reprimed | 000AE51C | BoS301 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Outside the Wire | 0013C640 | BoS204 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Quartermastery | 000C30DC | BosR02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Reveille | 001826BF | BoS000 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Semper Invicta | 0002BF20 | BoS200 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Shadow of Steel | 0002BF21 | BoS201 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Show No Mercy | 000537FF | BoS202 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Spoils of War | 000FDC8C | BoS303 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Tactical Thinking | 00107A1C | BoS302B | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| The Lost Patrol | 000B1D79 | BoSM01 | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
+| The Nuclear Option (Brotherhood of Steel) | 0010C64B | MQ302BoS | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Tour of Duty | 000537FC | BoS201B | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
 | Blood Bank | _pending audit_ | _pending audit_ | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Cleansing the Commonwealth | 00064EC7 | BoSR01 | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Feeding the Troops | 000D1EB2 | BoSR05 | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Leading by Example | 000C8675 | BoSR03 | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Quartermastery | 000C30DC | BosR02 | Radiant | yes | `[Radiant]` / `[R]` | likely |
 
 ## Railroad
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | A Clean Equation | 0014A34A | RRR10 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Boston After Dark | 0005FD90 | RRM01 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Butcher's Bill | 000B1F1D | RRR01a | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Jackpot: <Alias=QuestLocation> | 000B926B | RRR03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Memory Interrupted | 000A8BAF | RRM02 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Mercer Safehouse | 000B26C2 | RRR04 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Operation Ticonderoga | 000BC3B7 | RR301 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| Precipice of War | 000B9338 | RR302 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| Randolph Safehouse <Global=RRR06DisplayNumber> | 001845F7 | RRR06 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Road to Freedom | 000459D2 | RR101 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| Rockets' Red Glare | 000B9339 | RR303 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| The Nuclear Option (Railroad) | 0010C64C | MQ302RR | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| To the Mattresses <Global=RRR08DisplayNumber> | 0013A33D | RRR08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Tradecraft | 0006FA37 | RR102 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| Underground Undercover | 000B2D49 | RR201 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
+| Boston After Dark | 0005FD90 | RRM01 | Side | no | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Burning Cover | 0019E746 | RRAct3Lost | Main | no | `[Railroad]` / `[RR]` | verified |
+| Butcher's Bill | 000B1F1D | RRR01a | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Butcher's Bill 2 | 000B1F1C | RRR01b | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Concierge | 000B3E82 | RRR02a | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| High Ground | 00145F1A | RRR09 | Radiant | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Jackpot: <Alias=QuestLocation> | 000B926B | RRR03 | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Memory Interrupted | 000A8BAF | RRM02 | Side | no | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Mercer Safehouse | 000B26C2 | RRR04 | Side | no | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Operation Ticonderoga | 0007CC61 | RR301 | Main | no | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Precipice of War | 0002C8CB | RR302 | Main | no | `[Railroad]` / `[RR]` | verified |
+| Randolph Safehouse <Global=RRR06DisplayNumber> | 001845F7 | RRR06 | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Road to Freedom | 000459D2 | RR101 | Main | no | `[Railroad]` / `[RR]` | verified |
+| Rockets' Red Glare | 00043275 | RR303 | Main | no | `[Railroad]` / `[RR]` | verified |
+| The Nuclear Option (Railroad) | 0010C64C | MQ302RR | Main | no | `[Railroad]` / `[RR]` | verified |
+| To the Mattresses <Global=RRR08DisplayNumber> | 0013A33D | RRR08 | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
+| Tradecraft | 0006FA37 | RR102 | Main | no | `[Railroad]` / `[RR]` | verified |
+| Underground Undercover | 000B2D48 | RR201 | Main | no | `[Railroad]` / `[RR]` | verified |
 | Variable Removal | 00186C79 | RRR07 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Weathervane: <Alias=QuestLocation> | 000B926A | RRR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Concierge | 000B3E82 | RRR02a | Radiant | yes | `[Radiant]` / `[R]` | unverified |
+| Weathervane: <Alias=QuestLocation> | 000B926A | RRR05 | Side | yes | `[Railroad Side Quest]` / `[RR-S]` | verified |
 
 ## Institute
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| A House Divided | 000B2D47 | InstM03 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Airship Down | 0010CD67 | Inst308 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
+| A House Divided | 000B2D47 | InstM03 | Side | no | `[Institute Side Quest]` / `[INST-S]` | verified |
+| Airship Down | 000BAD00 | Inst308 | Main | no | `[Institute]` / `[INST]` | verified |
 | Appropriation | 000EDCEF | InstR03NEW | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Building a Better Crop | 000986C7 | InstM01 | Side | no | `[Side Quest]` / `[S]` | verified |
-| End of the Line | 000E3778 | Inst307 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
+| Building a Better Crop | 000986C7 | InstM01 | Side | no | `[Institute Side Quest]` / `[INST-S]` | verified |
+| End of the Line | 000BACFF | Inst307 | Main | no | `[Institute]` / `[INST]` | verified |
 | Hypothesis | 000EB268 | InstR02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Mankind - Redefined | 0002B4E9 | Inst303 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| Mass Fusion | 0015BD39 | InstMassFusion | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| Nuclear Family | 000ABDCD | InstMQPostQuest | Main | no | `[Institute - Main]` / `[Inst]` | verified |
+| Mankind - Redefined | 0002B4E9 | Inst303 | Main | no | `[Institute]` / `[INST]` | verified |
+| Mass Fusion | 0015BD39 | InstMassFusion | Main | no | `[Institute]` / `[INST]` | verified |
+| Nuclear Family | 000ABDCD | InstMQPostQuest | Main | no | `[Institute]` / `[INST]` | verified |
 | Pest Control: <Alias=Dungeon> | 000F7933 | InstR01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Pinned | 0003FD19 | Inst305 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| Plugging a Leak | 000A8257 | InstM02 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Political Leanings | 000F0D8C | InstR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Powering Up | 000DD582 | Inst306 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
+| Pinned | 000A274B | Inst305 | Main | no | `[Institute]` / `[INST]` | verified |
+| Pinned | 00055BE4 | MinVsInst | Main | no | `[Institute]` / `[INST]` | verified |
+| Plugging a Leak | 000A8257 | InstM02 | Side | no | `[Institute Side Quest]` / `[INST-S]` | verified |
+| Political Leanings | 000F0D8C | InstR05 | Side | yes | `[Institute Side Quest]` / `[INST-S]` | verified |
+| Powering Up | 000AC7B3 | Inst306 | Main | no | `[Railroad]` / `[RR]` | verified |
 | Reclamation: <Alias=Dungeon> | 000EDE28 | InstR04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Synth Retention | 0005C338 | Inst301 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| The Battle of Bunker Hill | 000A8258 | Inst302 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
+| Synth Retention | 000E2058 | Inst301 | Main | no | `[Institute]` / `[INST]` | verified |
+| The Battle of Bunker Hill | 000A8258 | Inst302 | Main | no | `[Institute]` / `[INST]` | verified |
 
 ## Other
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| A Pillar of the Community | 000C5093 | DN019JoinCult | Side | no | `[Side Quest]` / `[S]` | verified |
 | Benign Intervention | 001666C5 | COMCaitQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Botany Class | 0002125F | FFDiamondCity03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Cambridge Polymer Labs | 000284BC | DN015 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Confidence Man | 00022A05 | MS14 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Curtain Call | 00146C84 | MS10b | Side | no | `[Side Quest]` / `[S]` | verified |
 | Dangerous Minds | 000229E9 | MQ202 | Main | no | `[Main]` / `[M]` | verified |
-| Dependency | 0003F221 | MS18 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Dependency | 00022A09 | MS18 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Dependency | 00033527 | V81_03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Detective Case Files | 000229FC | MS07 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Diamond City Blues | 00022A04 | MS13 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Emergent Behavior | 0016454E | COMCurieQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Emogene Takes a Lover | 000503B9 | MS09Mission02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Fallen Hero | 00122220 | FFBunkerHill01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Getting a Clue | 000229E6 | MQ105 | Main | no | `[Main]` / `[M]` | verified |
+| Here Kitty, Kitty | 00033520 | V81_01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Here There Be Monsters | 000229F7 | MS02 | Side | no | `[Side Quest]` / `[S]` | verified |
+| High Ground | 00150577 | RRR11 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Hole in the Wall | 00022A0A | MS19 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Human Error | 00022A08 | MS17 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Hunter/Hunted | 000229EB | MQ205 | Main | no | `[Main]` / `[M]` | verified |
 | In Sheep's Clothing | 001764DF | FFDiamondCity10 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Institutionalized | 000229EC | MQ207 | Main | no | `[Main]` / `[M]` | verified |
+| Institutionalized | 000229EC | MQ207 | Main | no | `[Institute]` / `[INST]` | verified |
 | Jewel of the Commonwealth | 000229E5 | MQ103 | Main | no | `[Main]` / `[M]` | verified |
 | Kid in a Fridge | 000229F6 | MS01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Last Voyage of the U.S.S. Constitution | 00022A02 | MS11 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -171,28 +183,34 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Med-Tek Research | 00084CE1 | DN066 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Mystery Meat | 0002633E | DN079 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Order Up | 001069A9 | DialogueDrumlinDiner | Side | no | `[Side Quest]` / `[S]` | verified |
+| Out in Left Field | 00035D03 | FFDiamondCity06 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Out of Time | 0001CC2A | MQ102 | Main | no | `[Main]` / `[M]` | verified |
-| Out of the Fire | 00026340 | DN121 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Out of the Fire | 00026340 | DN121 | Side | no | `[Minutemen Side Quest]` / `[MM-S]` | verified |
 | Painting the Town | 0001D727 | FFDiamondCity01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Painting the Town Pointer | 0004F623 | FFDiamondCity01Misc | Side | no | `[Side Quest]` / `[S]` | verified |
+| Pickman's Gift | 0007E1BB | DN028 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Prep School | 0012221F | FFBunkerHill03 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Public Knowledge | 00108EC0 | FFGoodneighbor01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pull the Plug | 001073CE | DN138 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Reunions | 000229E7 | MQ106 | Main | no | `[Main]` / `[M]` | verified |
 | Short Stories | 001338B9 | V81_04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Special Delivery | 000503B8 | MS09Mission01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Story of the Century | 000456E8 | FFDiamondCity07 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Talk to Jack Cabot about the artifact | _pending audit_ | MS09MiscJackReward | Side | no | `[Side Quest]` / `[S]` | verified |
+| Talk to Jack Cabot about the artifact | 000F491A | MS09MiscJackReward | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Big Dig | 00022A07 | MS16 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Combat Zone | 0004ACE8 | CZMisc | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Devil's Due | 0014B717 | MS05B | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Disappearing Act | 0001CB51 | MS07a | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Gilded Grasshopper | 000229FD | MS07b | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Glowing Sea | 0006B500 | MQ204 | Main | no | `[Main]` / `[M]` | verified |
+| The Marowski Heist | 00084E40 | MS13MarowskiRevenge | Side | no | `[Side Quest]` / `[S]` | verified |
+| The Memory Den | 0010B654 | FFGoodneighbor02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Molecular Level | 000B1752 | MQ206 | Main | no | `[Main]` / `[M]` | verified |
 | The Secret of Cabot House | 00022A00 | MS09 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Silver Shroud | 00027556 | MS04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Traffic Jam | 00122221 | FFBunkerHill02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Trouble Brewin' | 00022A03 | MS12 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Trouble Brewin' | 0017D18C | DialogueGoodneighborRufus | Side | no | `[Side Quest]` / `[S]` | verified |
 | Unlikely Valentine | 0001F25E | MQ104 | Main | no | `[Main]` / `[M]` | verified |
 | Vault 75 | 000FCB15 | DN143 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Vault 81 | 000B8464 | V81_00_Intro | Side | no | `[Side Quest]` / `[S]` | verified |

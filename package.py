@@ -25,7 +25,7 @@ import zipfile
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-VERSION = "1.1.1"
+VERSION = "1.2.0"
 _DIR = Path(__file__).resolve().parent
 ROOT = _DIR if (_DIR / "Database").exists() else _DIR.parent
 
