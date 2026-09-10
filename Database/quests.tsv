@@ -269,3 +269,13 @@
 001357DB|WorkshopSynthInfiltrator02|Help defend Synth Sabotage|radiant|Settlement Defense|Minutemen||true|true|true|Fallout4.esm|Defend|verified|Settlement workshop defense alert.
 002407D0|WorkshopMirelurkAttack_SI|Help defend Mirelurk Attack|radiant|Settlement Defense|Minutemen||true|true|true|Fallout4.esm|Defend|verified|Settlement workshop defense alert.
 0024918C|WorkshopSuperMutantAttack02|Help defend Super Mutant Attack|radiant|Settlement Defense|Minutemen||true|true|true|Fallout4.esm|Defend|verified|Settlement workshop defense alert.
+0016D036|InstKickOut|Banished from the Institute|inst|Institute|Institute||false|false|false|Fallout4.esm|Main|verified|Institute eviction quest upon becoming hostile to the Institute.
+000482CD|DN151|Troubled Waters|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Graygarden Weston Water Treatment Plant quest.
+0004AD05|DN101|Pickman's Gift|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Pickman Gallery safe reward quest.
+000254B7|DN154|Giddyup 'n Go|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Arlen Glass toy parts quest at The Slog.
+00048516|DN054|Atom Cats Garage|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Atom Cats Zeke & Warwick Homestead pump repair quest.
+0004542B|DN049|General Atomics Galleria|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|General Atomics Galleria reopening quest.
+000457C6|MS13FindPhoto|The Marowski Heist|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Diamond City Blues follow-up quest.
+000684D0|DN123|Skylanes Flight 1981|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Skylanes Flight 1981 crash site investigation quest.
+000ADCE7|DN053|Virgil's Serum|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Virgil experimental serum quest in FEV lab.
+0002074B|CZ|The Combat Zone|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Combat Zone clearance & Cait recruitment quest.

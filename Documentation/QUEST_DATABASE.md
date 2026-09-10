@@ -15,7 +15,7 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | State | Entries |
 | --- | --- |
-| verified | 252 |
+| verified | 262 |
 | likely | 12 |
 | unverified | 2 |
 | excluded | 2 |
@@ -140,6 +140,7 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | A House Divided | 000B2D47 | InstM03 | Side | no | `[Institute Side Quest]` / `[INST-S]` | verified |
 | Airship Down | 000BAD00 | Inst308 | Main | no | `[Institute]` / `[INST]` | verified |
 | Appropriation | 000EDCEF | InstR03NEW | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Banished from the Institute | 0016D036 | InstKickOut | Institute | no | `[Institute]` / `[INST]` | verified |
 | Building a Better Crop | 000986C7 | InstM01 | Side | no | `[Institute Side Quest]` / `[INST-S]` | verified |
 | End of the Line | 000BACFF | Inst307 | Main | no | `[Institute]` / `[INST]` | verified |
 | Hypothesis | 000EB268 | InstR02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
@@ -163,6 +164,7 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | A New You | 000C44D7 | FFDiamondCity11 | Side | no | `[Side Quest]` / `[S]` | verified |
 | A Pillar of the Community | 000C5093 | DN019JoinCult | Side | no | `[Side Quest]` / `[S]` | verified |
 | Art Appreciation | 001120DE | FFGoodneighbor05 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Atom Cats Garage | 00048516 | DN054 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Benign Intervention | 001666C5 | COMCaitQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Botany Class | 0002125F | FFDiamondCity03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Cambridge Polymer Labs | 000284BC | DN015 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -181,7 +183,9 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Emogene Takes a Lover | 000503B9 | MS09Mission02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Fallen Hero | 00122220 | FFBunkerHill01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Find the Treasures of Jamaica Plain | 000E9914 | DN070 | Side | no | `[Side Quest]` / `[S]` | verified |
+| General Atomics Galleria | 0004542B | DN049 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Getting a Clue | 000229E6 | MQ105 | Main | no | `[Main]` / `[M]` | verified |
+| Giddyup 'n Go | 000254B7 | DN154 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Give Sheffield a Nuka-Cola | 000502AC | FFDiamondCity08 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Gun Run | 001243D6 | DN083_Barney | Side | no | `[Side Quest]` / `[S]` | verified |
 | Hazardous Material | 0010CB94 | FFGoodneighbor03 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -215,12 +219,14 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Painting the Town | 0001D727 | FFDiamondCity01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Painting the Town Pointer | 0004F623 | FFDiamondCity01Misc | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pickman's Gift | 0007E1BB | DN028 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Pickman's Gift | 0004AD05 | DN101 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pool Cleaning | 00142434 | FFDiamondCity04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Prep School | 0012221F | FFBunkerHill03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Public Knowledge | 00108EC0 | FFGoodneighbor01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pull the Plug | 001073CE | DN138 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Reunions | 000229E7 | MQ106 | Main | no | `[Main]` / `[M]` | verified |
 | Short Stories | 001338B9 | V81_04 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Skylanes Flight 1981 | 000684D0 | DN123 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Special Delivery | 000503B8 | MS09Mission01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Story of the Century | 000456E8 | FFDiamondCity07 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Talk to Jack Cabot about the artifact | 000F491A | MS09MiscJackReward | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -229,11 +235,13 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | The Big Dig | 00022A07 | MS16 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Cleaner | 0010D5A7 | FFGoodneighbor04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Combat Zone | 0004ACE8 | CZMisc | Side | no | `[Side Quest]` / `[S]` | verified |
+| The Combat Zone | 0002074B | CZ | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Devil's Due | 0014B717 | MS05B | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Disappearing Act | 0001CB51 | MS07a | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Gilded Grasshopper | 000229FD | MS07b | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Glowing Sea | 0006B500 | MQ204 | Main | no | `[Main]` / `[M]` | verified |
 | The Marowski Heist | 00084E40 | MS13MarowskiRevenge | Side | no | `[Side Quest]` / `[S]` | verified |
+| The Marowski Heist | 000457C6 | MS13FindPhoto | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Memory Den | 0010B654 | FFGoodneighbor02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Molecular Level | 000B1752 | MQ206 | Main | no | `[Main]` / `[M]` | verified |
 | The Secret of Cabot House | 00022A00 | MS09 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -241,9 +249,11 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Traffic Jam | 00122221 | FFBunkerHill02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Trouble Brewin' | 00022A03 | MS12 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Trouble Brewin' | 0017D18C | DialogueGoodneighborRufus | Side | no | `[Side Quest]` / `[S]` | verified |
+| Troubled Waters | 000482CD | DN151 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Unlikely Valentine | 0001F25E | MQ104 | Main | no | `[Main]` / `[M]` | verified |
 | Vault 75 | 000FCB15 | DN143 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Vault 81 | 000B8464 | V81_00_Intro | Side | no | `[Side Quest]` / `[S]` | verified |
+| Virgil's Serum | 000ADCE7 | DN053 | Side | no | `[Side Quest]` / `[S]` | verified |
 | War Never Changes | 0001ED86 | MQ101 | Main | no | `[Main]` / `[M]` | verified |
 
 
