@@ -15,10 +15,10 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | State | Entries |
 | --- | --- |
-| verified | 193 |
-| likely | 21 |
+| verified | 198 |
+| likely | 17 |
 | unverified | 3 |
-| excluded | 3 |
+| excluded | 2 |
 
 > **Nothing in this file ships as `verified` out of the box.** Verification requires
 > reading the QUST records in your own install. Run `AuditQuests.pas` first; it
@@ -53,18 +53,18 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Power for <Alias=ActualLocation> | 00162F44 | MinRadiantOwned07ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Raider Troubles | 00098136 | MinRecruit01 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
 | Resettle Refugees at <Alias=HostileWorkshopLocation> | 00164167 | MinRecruit09 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Returning the Favor | 00106F05 | MinRecruit03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Returning the Favor | 00106F05 | MinRecruit03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Rogue Courser at <Alias=Dungeon> | 00157577 | MinRecruit08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Sanctuary | 0005DEE4 | Min01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Stop the Raiding at <Alias=ActualLocation> | 0003DF95 | MinRadiantOwned02 | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
 | Suspected Synth at <Alias=ActualLocation> | 00109D73 | MinRadiantOwned10ChangeLocOnly | Settlement Defense | yes | `[Defend]` / `[D]` | verified |
 | Taking Point | 0015F040 | MinRecruit06 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| The First Step | 0011B36E | MinRecruit00 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Nuclear Option (Minutemen) | 0010C64D | MQ302Min | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
 | When Freedom Calls | 001A001C | Min00 | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
 | With Our Powers Combined | 000DFB3C | MinDestBoS | Main | no | `[Minutemen - Main]` / `[MM]` | verified |
 | Defend the Castle | _pending audit_ | _pending audit_ | Side | no | - | excluded |
 | Taking Independence | 0003A457 | Min02 | Main | no | `[Minutemen - Main]` / `[MM]` | likely |
-| The First Step | 0011B36E | MinRecruit00 | Side | no | `[Side Quest]` / `[S]` | likely |
 | Group Effort | _pending audit_ | _pending audit_ | Radiant | yes | `[Radiant]` / `[R]` | unverified |
 
 ## Brotherhood of Steel
@@ -101,21 +101,21 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | --- | --- | --- | --- | --- | --- | --- |
 | A Clean Equation | 0014A34A | RRR10 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Boston After Dark | 0005FD90 | RRM01 | Side | no | `[Side Quest]` / `[S]` | verified |
-| Jackpot | 000B926B | RRR03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Butcher's Bill | 000B1F1D | RRR01a | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Jackpot: <Alias=QuestLocation> | 000B926B | RRR03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Memory Interrupted | 000A8BAF | RRM02 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Mercer Safehouse | 000B26C2 | RRR04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Operation Ticonderoga | 000BC3B7 | RR301 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
 | Precipice of War | 000B9338 | RR302 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
+| Randolph Safehouse <Global=RRR06DisplayNumber> | 001845F7 | RRR06 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Road to Freedom | 000459D2 | RR101 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
 | Rockets' Red Glare | 000B9339 | RR303 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
 | The Nuclear Option (Railroad) | 0010C64C | MQ302RR | Main | no | `[Railroad - Main]` / `[RR]` | verified |
-| To the Mattresses | 0013A33D | RRR08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| To the Mattresses <Global=RRR08DisplayNumber> | 0013A33D | RRR08 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Tradecraft | 0006FA37 | RR102 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
 | Underground Undercover | 000B2D49 | RR201 | Main | no | `[Railroad - Main]` / `[RR]` | verified |
 | Variable Removal | 00186C79 | RRR07 | Radiant | yes | `[Radiant]` / `[R]` | verified |
-| Mercer Safehouse | 000B26C2 | RRR04 | Side | no | - | excluded |
-| Butcher's Bill | 000B1F1D | RRR01a | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Randolph Safehouse | 001845F7 | RRR06 | Radiant | yes | `[Radiant]` / `[R]` | likely |
-| Weathervane | 000B926A | RRR05 | Radiant | yes | `[Radiant]` / `[R]` | likely |
+| Weathervane: <Alias=QuestLocation> | 000B926A | RRR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Concierge | 000B3E82 | RRR02a | Radiant | yes | `[Radiant]` / `[R]` | unverified |
 
 ## Institute
@@ -131,12 +131,12 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Mankind - Redefined | 0002B4E9 | Inst303 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
 | Mass Fusion | 0015BD39 | InstMassFusion | Main | no | `[Institute - Main]` / `[Inst]` | verified |
 | Nuclear Family | 000ABDCD | InstMQPostQuest | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| Pest Control | 000F7933 | InstR01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Pest Control: <Alias=Dungeon> | 000F7933 | InstR01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Pinned | 0003FD19 | Inst305 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
 | Plugging a Leak | 000A8257 | InstM02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Political Leanings | 000F0D8C | InstR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Powering Up | 000DD582 | Inst306 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
-| Reclamation | 000EDE28 | InstR04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Reclamation: <Alias=Dungeon> | 000EDE28 | InstR04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Synth Retention | 0005C338 | Inst301 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
 | The Battle of Bunker Hill | 000A8258 | Inst302 | Main | no | `[Institute - Main]` / `[Inst]` | verified |
 
@@ -309,7 +309,6 @@ Listed so the exclusions are auditable rather than invisible.
 
 | Quest | Source | Why excluded |
 | --- | --- | --- |
-| Mercer Safehouse | Fallout4.esm | One-time quest that unlocks a single settlement. Not re-issued. |
 | Defend the Castle | Fallout4.esm | Duplicate entry handled below by MinDefendCastle. |
 | Living on the Edge | DLCCoast.esm | One-time condenser repair quest. |
 

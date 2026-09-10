@@ -33,8 +33,8 @@ const
                                        //         other mods' QUST edits are kept
                                        //         (adds those mods as masters)
   FLAG_AS_ESL       = True;            // override-only plugins are always ESL safe
-  RADIANTS_TO_MISC  = True;            // True  = route radiant/repeatable quests to Pip-Boy Miscellaneous
-  TAG_OBJECTIVES    = True;            // True  = tag quest objectives (NNAM) so they appear tagged in Pip-Boy Miscellaneous
+  RADIANTS_TO_MISC  = False;           // False = preserve vanilla quest categories (do not force to Miscellaneous)
+  TAG_OBJECTIVES    = False;           // False = preserve vanilla objective subrecords
   DRY_RUN           = False;           // report only, create nothing
   // ------------------------------------------------------------------------
 
@@ -573,17 +573,8 @@ begin
       cObjsModified := cObjsModified + objCount;
     end;
 
-    if toMisc then begin
-      try
-        SetElementEditValues(ovr, 'DNAM\Type', 'Miscellaneous');
-      except
-        try
-          SetElementNativeValues(ovr, 'DNAM\Type', 6);
-        except
-          slReport.Add('WARNING  | ' + nm + ' | failed to set DNAM\Type to Miscellaneous');
-        end;
-      end;
-    end;
+    // Preserve vanilla DNAM\Type: do not force radiants to Miscellaneous.
+    // Quests designed for Miscellaneous stay in Miscellaneous, standalone radiants stay outside.
 
     Inc(cModified);
     if toMisc then

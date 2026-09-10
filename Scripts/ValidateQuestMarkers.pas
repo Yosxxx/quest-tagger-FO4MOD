@@ -105,7 +105,6 @@ begin
     nm := Name(el);
     if Pos('FULL', nm) = 1 then Continue;
     if Pos('Record Header', nm) = 1 then Continue;
-    if (Pos('DNAM', nm) = 1) and (SafeEditValue(ovr, 'DNAM\Type') = 'Miscellaneous') then Continue;
     mel := ElementByName(mst, nm);
     if not Assigned(mel) then begin
       Result := False; offender := nm + ' (added)'; Exit;

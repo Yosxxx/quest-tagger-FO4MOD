@@ -5,22 +5,22 @@
 000C30DC|BosR02|Quartermastery|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|likely|Teagan fetch quest, re-offered indefinitely with rotating item targets.
 000C8675|BoSR03|Leading by Example|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|likely|Escort/mentor quest re-issued with a rotating initiate alias.
 000CF3E2|BoSR04|Learning Curve|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|verified|Haylen scribe-escort quest, repeatable with rotating destinations.
-001B2B08|BoSFFMaster|Getting Technical|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|verified|Collect Technical Documents for Proctor Quinlan and Viable Blood Samples.
+||Blood Bank|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|likely|Knight-Captain Cade repeatable collection quest.
 000D1EB2|BoSR05|Feeding the Troops|brotherhood_radiant|Radiant|Brotherhood of Steel||true|false|false|Fallout4.esm|Radiant|likely|Teagan food-supply quest, repeatable.
-000B926A|RRR05|Weathervane|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|likely|Desdemona/PAM-issued repeatable, rotating dead-drop targets.
-001845F7|RRR06|Randolph Safehouse|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|likely|PAM-issued repeatable safehouse defence; numbered variants may exist as separate QUST records.
+000B926A|RRR05|Weathervane: <Alias=QuestLocation>|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|Desdemona/PAM-issued repeatable, rotating dead-drop targets.
+001845F7|RRR06|Randolph Safehouse <Global=RRR06DisplayNumber>|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|PAM-issued repeatable safehouse defence; numbered variants may exist as separate QUST records.
 00186C79|RRR07|Variable Removal|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|PAM assassination contract, re-issued with rotating targets.
 0014A34A|RRR10|A Clean Equation|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|PAM-issued repeatable clear-location contract.
-000B1F1D|RRR01a|Butcher's Bill|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|likely|PAM-issued repeatable; numbered variants may exist.
+000B1F1D|RRR01a|Butcher's Bill|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|PAM-issued repeatable; numbered variants may exist.
 0005FD90|RRM01|Boston After Dark|side|Side|Railroad||false|false|false|Fallout4.esm|Side|verified|Stockton and H2-22 Railroad escort side quest.
-000B926B|RRR03|Jackpot|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|Reported as a PAM repeatable but repeat behaviour not confirmed.
+000B926B|RRR03|Jackpot: <Alias=QuestLocation>|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|Reported as a PAM repeatable but repeat behaviour not confirmed.
 000B3E82|RRR02a|Concierge|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|unverified|Reported as a PAM repeatable but repeat behaviour not confirmed.
-0013A33D|RRR08|To the Mattresses|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|Named in the project brief. Existence as a Fallout 4 QUST record is NOT confirmed.
-000B26C2|RRR04|Mercer Safehouse||Side|Railroad||false|false|true|Fallout4.esm||excluded|One-time quest that unlocks a single settlement. Not re-issued.
-000F7933|InstR01|Pest Control|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Institute repeatable synth-retention style contract with rotating targets.
+0013A33D|RRR08|To the Mattresses <Global=RRR08DisplayNumber>|railroad_radiant|Radiant|Railroad||true|false|false|Fallout4.esm|Radiant|verified|Named in the project brief. Existence as a Fallout 4 QUST record is NOT confirmed.
+000B26C2|RRR04|Mercer Safehouse|side|Side|Railroad||false|false|true|Fallout4.esm|Side|verified|One-time quest that unlocks a single settlement. Not re-issued.
+000F7933|InstR01|Pest Control: <Alias=Dungeon>|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Institute repeatable synth-retention style contract with rotating targets.
 000EB268|InstR02|Hypothesis|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Advanced Systems repeatable data-collection quest.
 000EDCEF|InstR03NEW|Appropriation|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Repeatable acquisition quest with rotating item targets.
-000EDE28|InstR04|Reclamation|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Repeatable synth-recovery quest with rotating targets.
+000EDE28|InstR04|Reclamation: <Alias=Dungeon>|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Repeatable synth-recovery quest with rotating targets.
 000F0D8C|InstR05|Political Leanings|institute_radiant|Radiant|Institute||true|false|false|Fallout4.esm|Radiant|verified|Repeatable persuasion contract issued by Institute division heads.
 000A8257|InstM02|Plugging a Leak|side|Side|Institute||false|false|false|Fallout4.esm|Side|verified|Justin Ayo mole investigation Institute side quest.
 000986C7|InstM01|Building a Better Crop|side|Side|Institute||false|false|false|Fallout4.esm|Side|verified|Warwick Homestead seeds Institute side quest.
@@ -32,7 +32,7 @@
 0015F040|MinRecruit06|Taking Point|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|verified|Preston-issued repeatable clear-and-claim quest for prospective settlements.
 0015F03F|MinRecruit05|Clearing the Way|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|verified|Repeatable location-clearing quest issued on behalf of settlers.
 ||Group Effort|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|unverified|Repeatable multi-settler assistance quest.
-0011B36E|MinRecruit00|The First Step|side|Side|Minutemen||false|false|true|Fallout4.esm|Side|likely|One-time Minutemen storyline quest that merely introduces the radiant system.
+0011B36E|MinRecruit00|The First Step|side|Side|Minutemen||false|false|true|Fallout4.esm|Side|verified|One-time Minutemen storyline quest that merely introduces the radiant system.
 0003A457|Min02|Taking Independence|mm|Main|Minutemen||false|false|true|Fallout4.esm|Main|likely|One-time Castle storyline quest leading to Minutemen endgame.
 ||Defend the Castle||Side|Minutemen||false|false|true|Fallout4.esm||excluded|Duplicate entry handled below by MinDefendCastle.
 0100D5FC|DLC01MQPostQuestRadiantScene02|Rogue Robot|automatron_radiant|Radiant|Other|Automatron|true|false|false|DLCRobot.esm|Automatron|verified|Ada-issued repeatable rogue-robot hunt with rotating targets, available after the DLC storyline.
@@ -129,17 +129,14 @@
 00109D73|MinRadiantOwned10ChangeLocOnly|Suspected Synth at <Alias=ActualLocation>|settlement_defense|Settlement Defense|Minutemen||true|true|true|Fallout4.esm|Defend|verified|Template settlement suspected synth radiant variant.
 001A001C|Min00|When Freedom Calls|mm|Main|Minutemen||false|false|false|Fallout4.esm|Main|verified|Museum of Freedom main quest.
 0014B717|MS05B|The Devil's Due|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Museum of Witchcraft side quest.
-0014B718|MS05MiscSalem|Investigate the Museum of Witchcraft|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Museum of Witchcraft misc pointer objective.
 00022A05|MS14|Confidence Man|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Travis Miles side quest.
 00027556|MS04|The Silver Shroud|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Silver Shroud side quest.
 00022A00|MS09|The Secret of Cabot House|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Cabot House questline climax.
 000503B8|MS09Mission01|Special Delivery|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Edward Deegan Parsons serum side quest.
 000503B9|MS09Mission02|Emogene Takes a Lover|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Cabot House sister search side quest.
-000F491A|MS09MiscJackReward|Talk to Jack Cabot about the artifact|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Jack Cabot post-quest reward objective.
+|MS09MiscJackReward|Talk to Jack Cabot about the artifact|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Jack Cabot post-quest reward objective.
 000456E8|FFDiamondCity07|Story of the Century|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Piper Diamond City interview side quest.
 0005DEE4|Min01|Sanctuary|side|Side|Minutemen||false|false|true|Fallout4.esm|Side|verified|Sturges Sanctuary settlement tutorial side quest.
-000482CD|DN151|Troubled Waters|side|Side|Other||false|false|true|Fallout4.esm|Side|verified|Graygarden water treatment plant quest.
-000502AC|FFDiamondCity08|Nuka-Cola Needs|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Give Sheffield a Nuka-Cola side quest.
 00022A0A|MS19|Hole in the Wall|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Vault 81 Curie side quest.
 0001D727|FFDiamondCity01|Painting the Town|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Abbot wall painting side quest.
 0004F623|FFDiamondCity01Misc|Painting the Town Pointer|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Abbot Diamond City wall misc pointer.
@@ -179,7 +176,7 @@
 00122221|FFBunkerHill02|Traffic Jam|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Deb clear out National Guard Training Yard side quest.
 0012221F|FFBunkerHill03|Prep School|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Kessler Zeller raiders prep school side quest.
 0004ACE8|CZMisc|The Combat Zone|side|Side|Other||false|false|false|Fallout4.esm|Side|verified|Tommy Lonegan Combat Zone intro pointer.
-00106F05|MinRecruit03|Returning the Favor|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|verified|Abernathy Farm locket quest.
+00106F05|MinRecruit03|Returning the Favor|side|Side|Minutemen||false|false|true|Fallout4.esm|Side|verified|Abernathy Farm locket quest.
 00157577|MinRecruit08|Rogue Courser at <Alias=Dungeon>|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|verified|Rogue Courser Minutemen radiant.
 00164167|MinRecruit09|Resettle Refugees at <Alias=HostileWorkshopLocation>|minutemen_radiant|Radiant|Minutemen||true|false|true|Fallout4.esm|Radiant|verified|Resettle refugees Minutemen radiant.
 000C97A8|WorkshopGunnerAttack01|Gunners|settlement_defense|Settlement Defense|Minutemen||true|true|true|Fallout4.esm|Defend|verified|Settlement gunner attack radiant.

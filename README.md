@@ -1,7 +1,7 @@
 # Pip-Boy Quest Tagger for Fallout 4
 
 [![Fallout 4](https://img.shields.io/badge/Fallout%204-1.11.240%2B-blue.svg)](https://bethesda.net/game/fallout-4)
-[![Mod Version](https://img.shields.io/badge/Version-1.1.0-brightgreen.svg)](https://www.nexusmods.com/fallout4/mods)
+[![Mod Version](https://img.shields.io/badge/Version-1.1.1-brightgreen.svg)](https://www.nexusmods.com/fallout4/mods)
 [![Format](https://img.shields.io/badge/Format-ESL--flagged%20ESP-orange.svg)](#)
 [![Mod Manager](https://img.shields.io/badge/Installer-2--Step%20FOMOD-purple.svg)](#installation)
 

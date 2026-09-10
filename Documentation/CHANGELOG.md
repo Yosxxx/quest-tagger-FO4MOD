@@ -3,6 +3,21 @@
 All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.1] - 2026-09-10
+
+### Fixed
+- Restored vanilla `DNAM\Type` categories across all plugins (Railroad, Brotherhood of Steel, Institute, Minutemen, Side). Radiant quests are no longer forced into Pip-Boy `Miscellaneous`.
+- Fixed Tinker Tom's MILA quest (`Weathervane` / `RRR05`), Railroad Dead Drops (`Jackpot` / `RRR03`), and other radiant quests being hidden in the Miscellaneous quest group with missing location names.
+- Restored dynamic quest location tokens (`<Alias=QuestLocation>`, `<Alias=Dungeon>`, `<Global=DisplayNumber>`) which now display properly in the main Pip-Boy log.
+- Updated `Scripts/GenerateQuestMarkers.pas` to set `RADIANTS_TO_MISC = False` and removed forced `DNAM\Type` override logic.
+
+## [1.1.0] - 2026-09-07
+
+### Added
+- Streamlined 2-step FOMOD installer (Style Selection -> Module Customization).
+- Visual preview cards in installer for Descriptive and Compact modes.
+- Descriptive tag polish: `[Main]` for main questline, `[Side Quest]` for side quests, `[Faction - Main]` for faction finales.
+
 ## [1.0.0] - unreleased
 
 First build. Framework, database and tooling are complete; the database has not yet been verified
