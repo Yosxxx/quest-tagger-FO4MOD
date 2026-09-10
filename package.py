@@ -468,7 +468,7 @@ def main():
     esp_count = sum(1 for q in db["quests"] if q["confidence"] in ("verified", "likely") and q["tag"])
     print(f"  database: {len(db['quests'])} entries, {esp_count} taggable by default")
 
-    # write_tsv(db)
+    write_tsv(db)
     write_quest_database(db, aliases)
     # write_module_config()  # preserved custom 2-step FOMOD installer
     write_info_xml()

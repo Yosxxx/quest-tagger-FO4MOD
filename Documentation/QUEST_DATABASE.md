@@ -15,7 +15,7 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | State | Entries |
 | --- | --- |
-| verified | 222 |
+| verified | 252 |
 | likely | 12 |
 | unverified | 2 |
 | excluded | 2 |
@@ -46,6 +46,13 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Greenskins | 00157CA5 | MinRecruit04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Gunners | 000C97A8 | WorkshopGunnerAttack01 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
 | Gunners | 000CFF72 | WorkshopGunnerAttack02 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Mirelurk Attack | 002407D0 | WorkshopMirelurkAttack_SI | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Raider Attack | 001125E2 | WorkshopRaiderAttack01 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Raider Attack | 001125E3 | WorkshopRaiderAttack02 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Raider Attack | 001125A6 | WorkshopRaiderAttack03 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Super Mutant Attack | 0024918C | WorkshopSuperMutantAttack02 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Synth Infiltration | 001357DA | WorkshopSynthInfiltrator01 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
+| Help defend Synth Sabotage | 001357DB | WorkshopSynthInfiltrator02 | Settlement Defense | yes | `[Radiant]` / `[R]` | verified |
 | Inside Job | 00136329 | Min207 | Main | no | `[Minutemen]` / `[MM]` | verified |
 | Kidnapped Trader at <Alias=ActualLocation> | 0003E0C1 | MinRadiantOwned03ChangeLocOnly | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Kidnapping | 00099848 | MinRecruit02 | Radiant | yes | `[Radiant]` / `[R]` | verified |
@@ -76,13 +83,14 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | A New Dawn | 00182EAE | BoS305 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
 | Ad Victoriam | 00173ED9 | BoS304 | Side | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
 | Blind Betrayal | 000B9F9D | BoS302 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
-| BoS Freeform Master Quest | 001B2B08 | BoSFFMaster | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
+| BoS Freeform Master Quest | 001B2B08 | BoSFFMaster | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Call to Arms | 0006F5C1 | BoS101 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
 | Cleansing the Commonwealth | 00064EC7 | BoSR01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Duty or Dishonor | 0004402C | BoSM02 | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
 | Feeding the Troops | 000D1EB2 | BoSR05 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Fire Support | 0005DDAB | BoS100 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
 | From Within | 0009FF4E | BoS203 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
+| Investigate the Brotherhood of Steel outpost | 00144F6E | BoS100MiscCambridge | Side | no | `[Brotherhood Side Quest]` / `[BOS-S]` | verified |
 | Leading by Example | 000C8675 | BoSR03 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Learning Curve | 000CF3E2 | BoSR04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Liberty Reprimed | 000AE51C | BoS301 | Main | no | `[Brotherhood of Steel]` / `[BOS]` | verified |
@@ -152,10 +160,13 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 
 | Quest | FormID | EditorID | Category | Repeatable | Tag | Confidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| A New You | 000C44D7 | FFDiamondCity11 | Side | no | `[Side Quest]` / `[S]` | verified |
 | A Pillar of the Community | 000C5093 | DN019JoinCult | Side | no | `[Side Quest]` / `[S]` | verified |
+| Art Appreciation | 001120DE | FFGoodneighbor05 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Benign Intervention | 001666C5 | COMCaitQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Botany Class | 0002125F | FFDiamondCity03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Cambridge Polymer Labs | 000284BC | DN015 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Check Out the Wanted Poster | 001437DB | FFDiamondCityWantedPosterMisc | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Confidence Man | 00022A05 | MS14 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Curtain Call | 00146C84 | MS10b | Side | no | `[Side Quest]` / `[S]` | verified |
 | Dangerous Minds | 000229E9 | MQ202 | Main | no | `[Main]` / `[M]` | verified |
@@ -163,24 +174,39 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Dependency | 00033527 | V81_03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Detective Case Files | 000229FC | MS07 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Diamond City Blues | 00022A04 | MS13 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Diamond City's Most Wanted (Ghouls) | 00181280 | FFDiamondCityWanted07 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Diamond City's Most Wanted (Raiders) | 0014182C | FFDiamondCityWanted01 | Radiant | yes | `[Radiant]` / `[R]` | verified |
+| Diamond City's Most Wanted (Super Mutants) | 0018127D | FFDiamondCityWanted04 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Emergent Behavior | 0016454E | COMCurieQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Emogene Takes a Lover | 000503B9 | MS09Mission02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Fallen Hero | 00122220 | FFBunkerHill01 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Find the Treasures of Jamaica Plain | 000E9914 | DN070 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Getting a Clue | 000229E6 | MQ105 | Main | no | `[Main]` / `[M]` | verified |
+| Give Sheffield a Nuka-Cola | 000502AC | FFDiamondCity08 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Gun Run | 001243D6 | DN083_Barney | Side | no | `[Side Quest]` / `[S]` | verified |
+| Hazardous Material | 0010CB94 | FFGoodneighbor03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Here Kitty, Kitty | 00033520 | V81_01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Here There Be Monsters | 000229F7 | MS02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | High Ground | 00150577 | RRR11 | Radiant | yes | `[Radiant]` / `[R]` | verified |
 | Hole in the Wall | 00022A0A | MS19 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Home Plate | 0014191C | FFDiamondCity02 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Human Error | 00022A08 | MS17 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Hunter/Hunted | 000229EB | MQ205 | Main | no | `[Main]` / `[M]` | verified |
 | In Sheep's Clothing | 001764DF | FFDiamondCity10 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Institutionalized | 000229EC | MQ207 | Main | no | `[Institute]` / `[INST]` | verified |
+| Investigate Covenant | 00143A15 | MS17MiscCovenant | Side | no | `[Side Quest]` / `[S]` | verified |
+| Investigate Trinity Tower | 00148BAC | MS10MiscTrinityTower | Side | no | `[Side Quest]` / `[S]` | verified |
+| Investigate Vault 81 | 001488F7 | MS19MiscVault81 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Investigate sea monster rumor | 0018F961 | MS02MiscObjective | Side | no | `[Side Quest]` / `[S]` | verified |
+| Investigate the Museum of Witchcraft | 0014B718 | MS05MiscSalem | Side | no | `[Side Quest]` / `[S]` | verified |
+| Investigate the sailing ship | 0014CE61 | MS11MiscCharleston | Side | no | `[Side Quest]` / `[S]` | verified |
 | Jewel of the Commonwealth | 000229E5 | MQ103 | Main | no | `[Main]` / `[M]` | verified |
 | Kid in a Fridge | 000229F6 | MS01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Last Voyage of the U.S.S. Constitution | 00022A02 | MS11 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Long Road Ahead | 00027411 | COMMacCreadyQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Long Time Coming | 000229FE | MS07c | Side | no | `[Side Quest]` / `[S]` | verified |
 | Med-Tek Research | 00084CE1 | DN066 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Message In a Bottle | 001DA041 | DNMessageInABottleQuest | Side | no | `[Side Quest]` / `[S]` | verified |
 | Mystery Meat | 0002633E | DN079 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Order Up | 001069A9 | DialogueDrumlinDiner | Side | no | `[Side Quest]` / `[S]` | verified |
 | Out in Left Field | 00035D03 | FFDiamondCity06 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -189,6 +215,7 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Painting the Town | 0001D727 | FFDiamondCity01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Painting the Town Pointer | 0004F623 | FFDiamondCity01Misc | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pickman's Gift | 0007E1BB | DN028 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Pool Cleaning | 00142434 | FFDiamondCity04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Prep School | 0012221F | FFBunkerHill03 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Public Knowledge | 00108EC0 | FFGoodneighbor01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Pull the Plug | 001073CE | DN138 | Side | no | `[Side Quest]` / `[S]` | verified |
@@ -197,7 +224,10 @@ Generated from `Database/quests.json` by `build/package.py`. Target runtime: Fal
 | Special Delivery | 000503B8 | MS09Mission01 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Story of the Century | 000456E8 | FFDiamondCity07 | Side | no | `[Side Quest]` / `[S]` | verified |
 | Talk to Jack Cabot about the artifact | 000F491A | MS09MiscJackReward | Side | no | `[Side Quest]` / `[S]` | verified |
+| Talk to MacCready | 001160B3 | FFGoodneighbor06 | Side | no | `[Side Quest]` / `[S]` | verified |
+| Talk to the Bobrov Brothers | 00224D29 | MS14Misc | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Big Dig | 00022A07 | MS16 | Side | no | `[Side Quest]` / `[S]` | verified |
+| The Cleaner | 0010D5A7 | FFGoodneighbor04 | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Combat Zone | 0004ACE8 | CZMisc | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Devil's Due | 0014B717 | MS05B | Side | no | `[Side Quest]` / `[S]` | verified |
 | The Disappearing Act | 0001CB51 | MS07a | Side | no | `[Side Quest]` / `[S]` | verified |
